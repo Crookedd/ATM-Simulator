@@ -11,26 +11,19 @@ namespace ATM_Simulator
         static void Main(string[] args)
         {
             ATMFacade atmFacade = new ATMFacade();
-
             Console.WriteLine("Добро пожаловать в наш банкомат!");
-
             Console.WriteLine("Вставьте вашу карту.");
             atmFacade.InsertCard();
 
-            /*Console.Write("Введите четырёхзначный Пароль: ");
-            string pin = Console.ReadLine();*/
             string pin;
-
             do {
                 Console.Write("Введите четырёхзначный Пароль: ");
                  pin = Console.ReadLine();
 
             } while (pin.Length != 4);
-
             atmFacade.EnterPin(pin);
 
             bool exit = false;
-
             while (!exit)
             {
                 Console.WriteLine("\n=== МЕНЮ ===");
@@ -66,5 +59,4 @@ namespace ATM_Simulator
             }
         }
     }
-
 }
