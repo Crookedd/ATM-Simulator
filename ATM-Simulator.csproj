@@ -43,11 +43,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ATM.cs" />
+    <Compile Include="ATMController.cs" />
+    <Compile Include="ATMFacade.cs" />
+    <Compile Include="CardInsertesState.cs" />
+    <Compile Include="IATMState.cs" />
+    <Compile Include="PinEnteredState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
